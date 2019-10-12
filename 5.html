@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var arr1 = [3, "a", "a", "a", 2, 3, "a", 3, "a", 2, 4, 9, 3];
+      var newar = [];
+      for (var i = 0; i < arr1.length; i++) {
+        if (newar.indexOf(arr1[i]) == -1) {
+          newar.push(arr1[i]);
+        }
+      }
+      console.log(newar);
+    </script>
+  </body>
+</html>

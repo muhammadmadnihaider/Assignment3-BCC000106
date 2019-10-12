@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var A = [20, 53, 78, 4, 91, 12];
+      var sorted = [];
+      var flag;
+
+      for (var i = 0, flag = A[0]; A.length > 0; i++) {
+        if (flag > A[i]) {
+          flag = A[i];
+        }
+        if (i === A.length - 1) {
+          sorted.push(flag);
+          A.splice(A.indexOf(flag), 1);
+          flag = A[0];
+          console.log(flag, "flag");
+          i = -1;
+        }
+      }
+      console.log(sorted);
+    </script>
+  </body>
+</html>

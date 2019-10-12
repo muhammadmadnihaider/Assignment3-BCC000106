@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var names = ["michael", "john", "tony"];
+      var score = [320, 230, 480];
+      alert(score.length);
+      for (var i = 0; i < names.length; i++) {
+        document.write(`
+        Score of ${names[i]} is ${score[i]}. Percentage: ${(score[i] / 500) *
+          100}%
+        <br>`);
+      }
+    </script>
+  </body>
+</html>

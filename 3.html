@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var names = ["yellow", "green", "blue", "white", "red"];
+      names.unshift(prompt("enter color, add at begining"));
+      alert(names);
+      names.push(prompt("add at end"));
+      alert(names);
+      names.splice(0, 0, prompt("enter color 1"), prompt("enter color 2"));
+      alert(names);
+      names.shift();
+      alert(names);
+      names.pop();
+      alert(names);
+      names.splice(
+        Number(prompt("at which index you want to add?")),
+        0,
+        prompt("choose a color you want to add at desired positiom")
+      );
+      alert(names);
+      names.splice(
+        Number(prompt("at which index you want to delete colors?")),
+        prompt("choose how many colors you want to delete")
+      );
+      alert(names);
+    </script>
+  </body>
+</html>
